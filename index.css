@@ -1,0 +1,219 @@
+.wrapper {
+    width: 70%;
+    margin: auto;
+}
+.divider {
+    border: white solid 1px;
+}
+h1 {
+    font-size: 4rem;
+}
+
+#hero {
+    height: 85vh;
+    padding-top: 6rem;
+
+    background-color: #D3D3D3;
+    background-image: linear-gradient(0deg, #D3D3D3 0%, #ffffff 50%, #696969 100%);   
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero-description {
+    width: 70%;
+    margin: auto;
+    font-weight: 400;
+}
+
+#about-me {
+    background-color: #fff;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.about-me-title {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+}
+.about-me-content {
+    text-align: center;
+}
+.about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+.about-me-description {
+    margin-top: .3rem;
+    font-size: 1.2rem;
+}
+.job:not(:last-child) {
+    margin-bottom: 2em;
+}
+.job-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .7em;
+}
+.job-description {
+    text-align: justify;
+    text-justify: inter-word;
+}
+.link {
+    color: blue;
+    text-decoration: none;
+}
+
+.project-title {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+}
+#project {
+    height: 50vh;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+.project-image {
+    width: 80%;
+}
+.project-content {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 1.5rem;
+}
+.project-content {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.project-content:hover {
+    box-shadow:  0 4px 8px rgba(0,0,0,0.5);
+}
+.project-content p {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1600px) {
+    .job-title {
+        flex-direction: column;
+    }
+    .job-right {
+        margin-top: .2em;
+    }
+}
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .hero-description {
+        font-size: 1.2rem;
+    }
+    .about-me-description {
+        font-size: 1rem;
+    }
+    .job-description {
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #about-me {
+        height: auto;
+        padding: 2rem;
+    }
+    .about-me-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    .job:not(:last-child) {
+        margin-bottom: 1.5em;
+    }
+    .about-me-description {
+        font-size: 1.2rem;
+    }
+    .job-description {
+        font-size: 1rem;
+    }
+    #project {
+        height: auto;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .hero-description {
+        font-size: 1rem;
+    }
+    .job:not(:last-child) {
+        margin-bottom: 1.25em;
+    }
+    .project-content {
+        font-size: .8rem;
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    #hero .wrapper {
+        width: 90%;
+    }
+    .hero-description {
+        width: 90%;
+    }
+    .job-title {
+        flex-direction: column;
+    }
+    .about-me-description {
+       font-size: .8rem;
+    }
+    .job-description {
+        font-size: .7rem;
+    }
+    .about-me-grid {
+        gap: 1.5rem;
+    }
+    .job {
+        font-size: .6rem;
+    }
+    .project-content {
+        font-size: .75rem;
+    }
+    #project .wrapper {
+        width: 90%;
+    }
+    .about-me-title {
+        font-size: 1.5rem;
+    }
+    .project-title {
+        font-size: 1.5rem;
+    }
+}

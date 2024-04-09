@@ -1,0 +1,182 @@
+.expertise-top {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.expertise-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4em;
+    grid-row-gap: 1.5rem;
+    text-align: center;
+}
+.expertise-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-section {
+    width: 100%;
+    padding: 3rem;
+    height: auto;
+    background-color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.skill-top {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.skill-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4em;
+    grid-row-gap: 1.5rem;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: silver;
+    border-radius: 50px;
+    margin-top: 0.5rem;
+    position: relative;
+}
+.html {
+    width: 80%;
+    height: 100%;
+    background-color: #E34C26;
+    border-radius: 50px;
+    position: absolute;
+}
+.css {
+    width: 70%;
+    height: 100%;
+    background-color: #1572B6;
+    border-radius: 50px;
+    position: absolute;
+}
+.js {
+    width: 50%;
+    height: 100%;
+    background-color: #F0DB4F;
+    border-radius: 50px;
+    position: absolute;
+}
+.bootstrap {
+    width: 50%;
+    height: 100%;
+    background-color: #7952B3;
+    border-radius: 50px;
+    position: absolute;
+}
+.materialize {
+    width: 60%;
+    height: 100%;
+    background-color: #EE6E73;
+    border-radius: 50px;
+    position: absolute;
+}
+.firebase {
+    width: 30%;
+    height: 100%;
+    background-color: #FFCB2B;
+    border-radius: 50px;
+    position: absolute;
+}
+.c {
+    width: 30%;
+    height: 100%;
+    background-color: #A8B9CC;
+    border-radius: 50px;
+    position: absolute;
+}
+.cpp {
+    width: 30%;
+    height: 100%;
+    background-color: #00599C;
+    border-radius: 50px;
+    position: absolute;
+}
+.pandas {
+    width: 30%;
+    height: 100%;
+    background-color: #150458;
+    border-radius: 50px;
+    position: absolute;
+}
+.matplotlib {
+    width: 30%;
+    height: 100%;
+    background-color: #11557C;
+    border-radius: 50px;
+    position: absolute;
+}
+.git {
+    width: 30%;
+    height: 100%;
+    background-color: #F15032;
+    border-radius: 50px;
+    position: absolute;
+}
+.figma {
+    width: 30%;
+    height: 100%;
+    background-color: #F24E1E;
+    border-radius: 50px;
+    position: absolute;
+}
+
+img {
+    width: 40%;
+    height: auto;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#wrapper {
+    width: 70%;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .skill-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 800px) {
+    #wrapper {
+        width: 90%;
+        margin-top: 5rem;
+    }
+}
+@media screen and (max-width: 1200px){
+    .expertise-bottom {
+        grid-template-columns: 1fr;
+    }
+    img {
+        width: 10%;
+    }
+}
+@media screen and (max-width: 600px) {
+    img {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 400px) {
+    img {
+        width: 33%;
+    }
+}
